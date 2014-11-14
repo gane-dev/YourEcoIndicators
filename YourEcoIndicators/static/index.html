@@ -1,0 +1,25 @@
+<html>
+<body>
+    <!-- Header -->
+    <div ui-view="nav"></div>
+
+    <!-- Content -->
+    <div style="margin:0 3px;">
+        <div ui-view></div>
+    </div>
+  <!--  <script src="scripts/vendor/bootstrap.js"></script>-->
+    <script src="scripts/js/vendor/require.js"></script>
+    <script>
+        // obtain requirejs config
+        require(['require', './../static/scripts/js/config-require'], function (require, config) {
+
+
+            // update global require config
+            window.require.config(config);
+
+            // load app
+            require(['./../static/scripts/js/main.js']);
+        });
+    </script>
+</body>
+</html>
