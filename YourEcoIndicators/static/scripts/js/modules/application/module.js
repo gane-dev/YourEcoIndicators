@@ -1,11 +1,15 @@
 ﻿define([
      'angular',
-     'ui.router'
+     'ui.router',
+     'nvd3'
 ],
     function (angular) {
     'use strict';
     return angular.module('app.application', [
-          'ui.router'
+          'ui.router',
+          'nvd3',
+          'app.constants',
+          'app.services',
     ]).config(['$stateProvider', function ($stateProvider) {
         $stateProvider.state('application', {
             url:"/home",
@@ -13,11 +17,6 @@
                 "@": {
                     templateUrl: '/static/scripts/js/modules/application/home.html',
                     controller: 'HomeCtrl'
-                }
-            },
-            resolve: {
-                promiseData: function () {
-                    return 1;
                 }
             }
         })

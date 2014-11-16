@@ -1,0 +1,3 @@
+﻿define([
+'./url-constants'
+], function () { });

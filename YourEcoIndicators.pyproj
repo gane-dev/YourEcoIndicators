@@ -53,6 +53,7 @@
     <Folder Include="YourEcoIndicators\static\scripts\js\" />
     <Folder Include="YourEcoIndicators\static\scripts\js\modules\" />
     <Folder Include="YourEcoIndicators\static\scripts\js\modules\application\" />
+    <Folder Include="YourEcoIndicators\static\scripts\js\modules\constants\" />
     <Folder Include="YourEcoIndicators\static\scripts\js\modules\services\" />
     <Folder Include="YourEcoIndicators\static\scripts\js\vendor\" />
     <Folder Include="YourEcoIndicators\UserViews\" />
@@ -76,8 +77,14 @@
     <Content Include="YourEcoIndicators\static\scripts\js\modules\application\home.html" />
     <Content Include="YourEcoIndicators\static\scripts\js\modules\application\index.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\modules\application\module.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\modules\constants\index.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\modules\constants\module.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\modules\constants\url-constants.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\modules\services\get-fred-data.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\modules\services\index.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\modules\services\module.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\modules\services\web-api-calls.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\vendor\angular-nvd3.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\angular-ui-router.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\angular.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\async.js" />
