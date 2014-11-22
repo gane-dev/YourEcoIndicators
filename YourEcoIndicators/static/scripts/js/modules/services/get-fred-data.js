@@ -8,15 +8,34 @@
            function getSPData()
            {
                var deferred = $q.defer();
-               webApiCalls.httpGetCall(urlConstants.getSP).
+               webApiCalls.httpGetCall(urlConstants.fredData.getSP).
                    then(function(data)
                    {
-                       return data;
+                       
+                       deferred.resolve(transformData(data));
                    }
                    ).catch(function (status) {
-                       return status;
+                       $q.reject(status);
         });
                return deferred.promise;
+           }
+           function transformData(data)
+           {
+               var transformedData = [];
+               for (key in data) {
+                   if (data.hasOwnProperty(key)) {
+                       if (data[key] != null) {
+                           var temp = { "label": key, "value": parseFloat(data[key]) };
+                           transformedData.push(temp);
+                       }
+                   }
+               }
+               var data = [{
+                   key: "Cumulative Return",
+                   values: transformedData
+               }];
+               return data;
+               
            }
         }]);
 });

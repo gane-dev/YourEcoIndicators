@@ -5,4 +5,4 @@ from YourEcoIndicators.FredData import FredChartsData
 @app.route('/FredData/api/SP', methods=['GET'])
 def get_tasks():
     x    = FredChartsData.FredChartsData()
-    return jsonify({'SP': x.getData()})
+    return  x.getData()

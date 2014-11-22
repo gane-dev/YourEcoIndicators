@@ -7,7 +7,7 @@
         'async': 'scripts/js/vendor/async',
         'domReady': 'scripts/js/vendor/domReady',
         'ui.router': 'scripts/js/vendor/angular-ui-router',
-        'd3': 'scripts/js/vendor/d3.min',
+        //'d3': 'scripts/js/vendor/d3.min',
         'nv': 'scripts/js/vendor/nv.d3',
         'nvd3':'scripts/js/vendor/angular-nvd3'
     },
@@ -21,19 +21,19 @@
             'deps': ['angular'],
           
         }
+        //,
+        //'d3': {
+        //    'deps': ['angular'],
+
+        //}
         ,
-        'd3': {
+        'nv': {
             'deps': ['angular'],
 
         }
         ,
-        'nv': {
-            'deps': ['d3'],
-
-        }
-        ,
         'nvd3': {
-            'deps': ['d3','nv','angular'],
+            'deps': ['nv','angular'],
 
         }
        

@@ -18,6 +18,7 @@
     <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
     <Name>YourEcoIndicators</Name>
     <RootNamespace>YourEcoIndicators</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -89,12 +90,14 @@
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\angular.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\async.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\bootstrap.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\vendor\d3.min.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\domReady.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\jquery-1.10.2.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\app.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\config-require.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\main.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\jquery-ui.js" />
+    <Content Include="YourEcoIndicators\static\scripts\js\vendor\nv.d3.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\require.js" />
     <Content Include="YourEcoIndicators\static\scripts\js\vendor\_references.js" />
     <Content Include="YourEcoIndicators\templates\about.html" />
